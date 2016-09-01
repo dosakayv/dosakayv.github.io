@@ -1,0 +1,269 @@
+body, html {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+.sectiondot {
+	position: relative;
+	width: 12px;
+	height: 12px;
+	background-color: yellow;
+	display: inline-block;
+	float: right;
+	transform: scale(0.6);
+	border-radius: 50%;
+}
+
+.vertical-navigation .sectionname {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.vertical-navigation a:hover .sectionname {
+	opacity: 1;
+}
+
+.vertical-navigation a.is-selected .sectiondot {
+	background-color: blue;
+	transform: scale(1)
+}
+
+.vertical-navigation a:hover span{
+	transform: scale(1);
+}
+
+.vi-section{
+	min-height: 100%;
+	position: relative;
+}
+
+
+/*
+	Make header section
+*/
+
+/*
+.section-header {
+	width: 0;
+	height: 0;
+	border-top: 250px solid #FF9800;
+	border-right: 250px solid transparent;
+}
+
+.section-header-title {
+    position: absolute;
+    top: 0;
+    display: block;
+    font-size: 50px;
+    padding-left: 15px;
+    color: #2196F3
+}
+*/
+
+.section-header {
+    width: 0;
+    height: 0;
+    padding-bottom: 20%;
+    padding-left: 20%;
+    overflow: hidden;
+}
+
+.section-header:after {
+    content: "";
+    display: block;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid;
+}
+
+#section2 .section-header:after {
+	border-left-color: #9C27B0;
+}
+
+#section3 .section-header:after {
+	border-left-color: #F44336;
+}
+
+#section4 .section-header:after {
+	border-left-color: #FF9800;
+}
+
+/*
+	Make header title
+*/
+
+.section-header-title {
+	position: absolute;
+	font-size: 50px;
+	margin-left: 15px;
+	font-family: 'Lato', sans-serif;
+}
+
+#section2 .section-header-title {
+	color: #FFEB3B;
+}
+
+#section3 .section-header-title {
+	color: #4CAF50;
+}
+
+#section4 .section-header-title {
+	color: #2196F3;
+}
+
+
+/*
+	Main content of section of each page
+*/
+
+.section-content {
+	background-color: #E0E0E0;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+
+/*
+	Projects presentation
+*/
+
+/*HAVE TO ADD IE10 version of flex box*/
+.projects-row {
+	height: 50%;
+	display: flex;
+	position: relative;
+	background-color: #212121;
+}
+
+.projects-row:hover img {
+	opacity: 0.1;
+}
+
+.projects-row:hover::after {
+	height: 100%;
+}
+
+.projects-row::after {
+	background-color: #B46E3C;
+	bottom: 0;
+	content: '';
+	height: 0%;
+	left: 0;
+	position: absolute;
+	width: 2em;
+	-webkit-transition: all 0.45s ease;
+	transition: all 0.45s ease;
+}
+
+.projects-row img {
+	width: 100%;
+	height: 100%;
+}
+
+.project-description {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	color: white;
+	padding-left: 3em;
+}
+
+.project-description:hover {
+	opacity: 1;
+}
+
+/*Home Page CSS*/
+.home-page img {
+	width: 100%;
+	height: 100%;
+}
+
+.home-page-content {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.home-page-content img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+/*About Page*/
+.about.section-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.info-details {
+	text-align: center;
+}
+
+/*contacts page*/
+.github img {
+	width: 128px;
+	height: 128px;
+}
+
+.contact-sites {
+	display: flex;
+}
+
+.contact-sites div{
+	flex-grow: 1;
+	text-align: center;
+}
+
+.contact .section-content{
+	display: flex;
+	align-items: center;
+}
+
+/* testing */
+
+.vertical-navigation a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.sectionname {
+	padding-right: 0.75em;
+}
+
+.vertical-navigation-container {
+    position: fixed;
+    right: 40px;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-navigation {
+	background-color: gray;
+}
