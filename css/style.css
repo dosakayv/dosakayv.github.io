@@ -65,8 +65,8 @@ body, html {
 .section-header {
     width: 0;
     height: 0;
-    padding-bottom: 20%;
-    padding-left: 20%;
+    padding-bottom: 15%;
+    padding-left: 15%;
     overflow: hidden;
 }
 
@@ -76,10 +76,11 @@ body, html {
     margin-left: -500px;
     border-bottom: 500px solid transparent;
     border-left: 500px solid;
+	border-left-color: #000;
 }
-
+/*
 #section2 .section-header:after {
-	border-left-color: #9C27B0;
+	border-left-color: #000;
 }
 
 #section3 .section-header:after {
@@ -88,21 +89,25 @@ body, html {
 
 #section4 .section-header:after {
 	border-left-color: #FF9800;
-}
+}*/
 
 /*
 	Make header title
 */
 
 .section-header-title {
+    font-family: "Nunito";
+    font-weight: bold;
 	position: absolute;
-	font-size: 50px;
-	margin-left: 15px;
-	font-family: 'Lato', sans-serif;
+/*	font-size: 40px;
+	margin-left: 15px;*/
+	font-size: 2.5em;
+	margin-left: 0.25em;
+	color: #FFF;
 }
 
-#section2 .section-header-title {
-	color: #FFEB3B;
+/*#section2 .section-header-title {
+	color: #FFF;
 }
 
 #section3 .section-header-title {
@@ -113,15 +118,15 @@ body, html {
 	color: #2196F3;
 }
 
-
+*/
 /*
 	Main content of section of each page
 */
 
 .section-content {
-	background-color: #E0E0E0;
+	/*background-color: #E0E0E0;*/
     height: 100%;
-    width: 70%;
+    width: 75%;
     position: absolute;
     right: 10%;
     top: 0;
@@ -131,15 +136,45 @@ body, html {
 	Projects presentation
 */
 
+#section3 {
+	background-color: #F76160;
+}
+
+.projects a {
+	text-decoration: none;
+	color: black;
+}
+
+.stock-market-project {
+	width: 48%;
+	height: 75vh;
+	background-color: white;
+	box-sizing: border-box;
+	border: solid 1em;
+	margin-top: 12.5vh;
+	display: inline-block;
+}
+
+.tic-tac-toe-project {
+	width: 48%;
+	height: 75vh;
+	background-color: white;
+	box-sizing: border-box;
+	border: solid 1em;
+	margin-top: 12.5vh;
+	display: inline-block;
+	float: right;
+}
+
 /*HAVE TO ADD IE10 version of flex box*/
 .projects-row {
-	height: 50%;
+	/*height: 50%;*/
 	display: flex;
 	position: relative;
 	background-color: #212121;
 }
 
-.projects-row:hover img {
+.projects-row:hover .project-heading {
 	opacity: 0.1;
 }
 
@@ -149,6 +184,7 @@ body, html {
 
 .projects-row::after {
 	background-color: #B46E3C;
+	/*background-color: white;*/
 	bottom: 0;
 	content: '';
 	height: 0%;
@@ -159,9 +195,16 @@ body, html {
 	transition: all 0.45s ease;
 }
 
-.projects-row img {
-	width: 100%;
-	height: 100%;
+.projects-row .project-heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #7DCC93;
+    font-family: "Nunito";
+    font-weight: bold;
+    font-size: 3em;
 }
 
 .project-description {
@@ -172,7 +215,9 @@ body, html {
 	right: 0;
 	opacity: 0;
 	color: white;
-	padding-left: 3em;
+	padding-left: 1.5em;
+	font-family: 'Antic Slab', serif;
+	font-size: 1.5em;
 }
 
 .project-description:hover {
@@ -180,66 +225,100 @@ body, html {
 }
 
 /*Home Page CSS*/
-.home-page img {
+/*.home-page img {
+	width: 100%;
+	height: 100%;
+}*/
+
+.home-page {
+	background-color: #000;
+}
+
+.home-page video {
 	width: 100%;
 	height: 100%;
 }
 
-.home-page-content {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-    display: flex;
-    flex-direction: column;
+.content-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
     justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.home-page-content {
+    border: solid 10px;
+    display: flex;
     align-items: center;
     color: #FFFFFF;
 }
 
-.home-page-content img {
+.home-page-text {
+    font-family: "Nunito";
+    font-weight: bold;
+    padding-left: 2em;
+}
+
+.home-page-image {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
+	padding: 0em 2em;
+}
+
+.home-page-text .heading-one {
+	font-size: 100px;
+}
+
+.home-page-text .heading-two {
+	font-size: 40px;
 }
 
 /*About Page*/
+
+.about .icon { 
+	width: 125px;
+	height: 125px;
+}
+
+.code .info-details {
+	font-size: 1.23em;
+}
+
+#section2 {
+	background-color: #BEE1DD;
+}
+
+.info-heading {
+    font-family: "Nunito";
+    font-weight: bold;
+    font-size: 2em;
+}
+
 .about.section-content {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .info {
-	width: 50%;
-	height: 50%;
+	width: 45%;
+	height: 45%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	box-sizing: border-box;
+	border: solid 0.4em;
+	margin: 1em;
 }
 
 .info-details {
 	text-align: center;
-}
-
-/*contacts page*/
-.github img {
-	width: 128px;
-	height: 128px;
-}
-
-.contact-sites {
-	display: flex;
-}
-
-.contact-sites div{
-	flex: 1;
-	text-align: center;
-}
-
-.contact .section-content{
-	display: flex;
-	align-items: center;
+    font-family: 'Antic Slab', serif;
+	font-size: 1.5em;
 }
 
 /* testing */
@@ -271,4 +350,237 @@ body, html {
 /*Link for the projects*/
 .projectLink1 {
 	display: block;
+}
+
+/*Contact Page*/
+/*Contact Mail Form*/
+
+#section4 {
+	background-color: #F8C687;
+}
+
+.contact .section-content{
+	/*display: flex;*/
+	/*align-items: center;*/
+	font-size: 16px;
+	font-family: 'Antic Slab', serif;
+}
+
+.contact-page-title {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: "Nunito";
+	margin-bottom: 2em;
+	margin-top: 0.5em;
+}
+
+.mail-container {
+	width: 100%;
+}
+
+.mail-container div {
+	position: relative;
+}
+
+.mail-container input {
+	background: none;
+	border: none;
+	border-bottom: 0.1em solid #000;
+	outline:none;
+	position: relative;
+	z-index: 1;
+	transition: border-color 500ms ease;
+	width: 100%;
+	font-size: 2em;
+	font-family: 'Antic Slab', serif;
+}
+
+.mail-container label {
+	/*font-weight: bold;*/
+	position: absolute;
+	font-size: 2em;
+	top: 0;
+	left: 0;
+	-webkit-transition: -webkit-transform 500ms ease;
+	transition: transform 500ms ease;
+}
+
+.mail-container input:focus + label, .mail-container input:valid + label {
+	/*color: orange;*/
+	transform: translate3d(0, -1.5em, 0);
+	-webkit-transform: translate3d(0, -1.5em, 0);
+}
+
+.mail-container input:focus {
+	border-color: orange;
+}
+
+.contact-information {
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-column {
+	flex-grow: 1;
+}
+
+.contact-column div:nth-child(2) {
+    margin-top: 4.5em;
+}
+
+.contact-column:nth-child(2) {
+    margin-left: 2em;
+}
+
+.contact-form-message {
+	border-bottom: 0.1em solid #000;
+	z-index: 1;
+	transition: border-color 500ms ease;
+	font-size: 2em;
+	outline: none;
+	margin-top: 2em;
+}
+
+.contact-form-message-active {
+	/*color: orange;*/
+	transform: translate3d(0, -1.5em, 0);
+	-webkit-transform: translate3d(0, -1.5em, 0);
+}
+
+.contact-form-message:focus {
+	border-color: orange;
+}
+
+.contact-submit {
+	margin-top: 4.5em;
+	text-align: center;
+}
+
+.contact-submit-button {
+	position: relative;
+	padding: 1.25em 1.25em;
+	border: #ff4c2e;
+	background: #ff4c2e;
+	color: #fff;
+	cursor: pointer;
+	line-height: 1;
+	z-index: 0;
+	outline: none;
+	width: 20em;
+	font-family: "Nunito";
+	font-weight: bold;
+}
+
+.contact-submit-button:after {
+	position: absolute;
+	content: "";
+	background: #000;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+/*	transition: all 500ms ease 0s;
+	-webkit-transition: all 500ms ease 0s;*/
+	transition: all 500ms;
+	-webkit-transition: all 500ms;
+}
+
+.contact-submit-button:hover:after {
+	width: 100%;
+}
+
+/*Used to highlight the fields that need to be filled out*/
+
+.required-fields .contact-form-message {
+	border-color: red;
+}
+
+.required-fields .contact-form-message:focus {
+	border-color: orange;
+}
+
+.required-fields input {
+	border-color: red;
+}
+
+.required-fields label {
+	color: red;
+}
+
+/*contacts page icons*/
+
+.contact-sites {
+	display: flex;
+	width: 125%;
+    margin-left: -15%;
+    margin-top: 4em;
+}
+
+.contact-sites div{
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.contact-sites .description {
+	margin-left: .35em;
+}
+
+/*Fixed Contact Container*/
+
+.fixed-contacts-container {
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+/*.fixed-contacts {
+	background-color: gray;
+	opacity: 0.7;
+}*/
+
+.github-logo {
+    padding: 30px 10px;
+}
+
+.linkedin-logo {
+    padding: 0px 10px;
+}
+
+.gmail-logo {
+    padding: 30px 10px;
+}
+
+/*.fixed-contacts div {
+	color: white
+}*/
+/*
+.github-logo {
+	background-image: url('../logos/testLogos/github-logo.png');
+}
+
+.linkedin-logo {
+	background-image: url('./logos/testLogos/linkedin-button.png');
+}
+
+.gmail-logo {
+	background-image: url('./logos/testLogos/google-plus-logo-button.png');
+}
+*/
+.fixed-contact-icon {
+	/*background: url(../logos/testLogos/github-logo.png) repeat 0 0;*/
+	/*background-image: url('../logos/testLogos/github-logo.png');*/
+	background: white;
+	cursor: pointer;
+    border-radius: 100%;
+    border: solid;
+    color: white;
+}
+
+.fixed-contact-icon:hover {
+	opacity: 1;
 }

@@ -1,11 +1,26 @@
 <html> 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
 </head>
 <body>
+
+	<div class="fixed-contacts-container">
+		<div class="fixed-contacts">
+			<div class="github-logo">
+				<img class="fixed-contact-icon" src="./logos/github/github-inactive.png" alt="Github">
+			</div>
+			<div class="linkedin-logo">
+				<img class="fixed-contact-icon" src="./logos/linkedIn/linkedin-inactive.png" alt="LinkedIn">
+			</div>
+			<div class="gmail-logo">
+				<img class="fixed-contact-icon" src="./logos/gmail/mail-inactive.png" alt="Gmail">
+			</div>
+		</div>
+	</div>
+
 	<div class="vertical-navigation-container">
 		<div class="vertical-navigation">
 			<div class="home">
@@ -37,12 +52,26 @@
 
 	<div id="section1" class="vi-section">
 		<div class="home-page">
-			<img src="./img/homePage.jpg" alt="Stock Graph">
+			<!-- <img src="./img/homePage.jpg" alt="Stock Graph"> -->
+			<video autoplay loop class="fillWidth">
+				<!-- <source src="./video/loveCoding/MP4/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+				<!-- <source src="./video/loveCoding/WEBM/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+
+				<source src="./video/busyStreet/MP4/Busy-City.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+				<!-- <source src="./video/loveCoding/WEBM/Busy-City.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+
+			</video>
 		</div>
-		<div class="home-page-content">
-			<img src="./img/portfolioPicture.jpg" alt="Stock Graph">
-			<h1>Vishnu Dosakayala</h1>
-			<h3>Vishnu is a Software Developer from Queens, New York.</h3>
+		<div class="content-container">
+			<div class="home-page-content">
+				<div class="home-page-text">
+					<div class="heading-one">Hi.</div>
+					<div class="heading-two">I am</div>
+					<div class="heading-one">Vishnu</div>
+					<div class="heading-one">Dosakayala</div>
+				</div>
+				<img class="home-page-image" src="./img/portfolioPicture.jpg" alt="Stock Graph">
+			</div>
 		</div>
 	</div>
 	<div id="section2" class="vi-section">
@@ -94,8 +123,8 @@
 			Projects
 		</div>
 		<div class="section-header"></div>
-		<div class="section-content">
-			<div class="portfolio-projects">
+		<div class="section-content projects">
+<!-- 			<div class="portfolio-projects">
 				<a class="project-link" href="https://react-stock-app.herokuapp.com" target="_blank">
 					<div class="projects-row">
 						<img src="./img/stockGraph.png" alt="Stock Graph">
@@ -116,8 +145,27 @@
 						</div>
 					</div>
 				</a>
+			</div> -->
+			<div class="stock-market-project">
+				<a class="project-link" href="https://react-stock-app.herokuapp.com" target="_blank">
+					<div class="projects-row">
+						<div class="project-heading">Isomorphic Stock Chart</div>
+						<div class="project-description">
+							I am testing that this is working. This project is a Isomorphic stock market app created using react.
+						</div>
+					</div>
+				</a>				
 			</div>
-		
+			<div class="tic-tac-toe-project">
+				<a class="project-link" href="https://dosakayv.github.io/UnbeatableTicTacToe/" target="_blank">
+					<div class="projects-row">
+						<div class="project-heading">Unbeatable Tic Tac Toe Game</div>
+						<div class="project-description">
+							I am testing that this is working. This project is a Isomorphic stock market app created using react.
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 	<div id="section4" class="contact vi-section">
@@ -125,22 +173,64 @@
 			Contact
 		</div>
 		<div class="section-header"></div>
+
 		<div class="section-content">
-			<div class="contact-sites">
-				<div class="linkedin">
-					<img src="./logos/linkedIn/In-2C-128px-TM.png" alt="Linkedin">
-					<div class="description">
-						If you would like to more about my work experience.
+			
+			<div class="contact-page-title">
+				Let's Work Together!
+				<div class="contact-header-message">
+				</div>
+			</div>
+
+			<div class="mail-container">
+				<div class="contact-information">				
+					<div class="contact-column">
+						<div class="contact-name-field">
+							<input class="name" name="name" type="text" required>
+							<label for="name">Your Name*</label>
+						</div>
+						<div class="contact-email-field">
+							<input class="email-address" name="email-address" type="text" required>
+							<label for="email-address">Email Address*</label>
+						</div>
+					</div>
+
+					<div class="contact-column">
+						<div class="contact-company-field">
+							<input class="company" name="company" type="text" required>
+							<label for="company">Company</label>
+						</div>
+						<div class="contact-number-field">
+							<input class="phone-number" name="phone-number" type="text" required>
+							<label for="phone-number">Phone Number</label>
+						</div>
 					</div>
 				</div>
+				<div class="contact-message-field">
+					<div class="contact-form-message" contentEditable="true"></div>
+					<label class="contact-form-message-label" for="contact-form-message">Message*</label>
+				</div>
+			</div>
+
+			<div class="contact-submit">
+				<button  class="contact-submit-button">SEND</button>
+			</div>
+
+			<div class="contact-sites">
 				<div class="github">
-					<img src="./logos/github/Octocat.png" alt="Github">
+					<img src="./logos/github/github-contact.png" alt="Github">
 					<div class="description">
 						If you are interested in taking a look at the projects code.
 					</div>
 				</div>
+				<div class="linkedin">
+					<img src="./logos/linkedIn/linkedin-contact.png" alt="Linkedin">
+					<div class="description">
+						If you would like to more about my work experience.
+					</div>
+				</div>
 				<div class="gmail">
-					<img src="./logos/gmail/logo_gmail_128px.png" alt="Gmail">
+					<img src="./logos/gmail/mail-contact.png" alt="Gmail">
 					<div class="description">
 						If you are interested in contacting with any questions or comment.
 						<a href="mailto:vishnudosakayala@gmail.com?subject=Hello!" target="_blank">Email</a>
@@ -148,6 +238,7 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
 	
 	<script src="js/jquery-v2.2.0.js"></script>
