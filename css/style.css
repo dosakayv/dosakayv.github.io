@@ -15,19 +15,19 @@ body, html {
 
 @media only screen and (min-width : 1201px)  and (max-width : 1400px) {
 	body, html {
-		font-size: 13.0px;
+		font-size: 16.0px;
 	}
 }
 
 @media only screen and (min-width : 1401px) and (max-width : 1600px) {
 	body, html {
-		font-size: 16px;
+		font-size: 18px;
 	}
 }
 
 @media only screen and (min-width : 1601px) and (max-width : 1800px) {
 	body, html {
-		font-size: 19px;
+		font-size: 20px;
 	}
 }
 
