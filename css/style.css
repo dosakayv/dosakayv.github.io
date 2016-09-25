@@ -610,12 +610,16 @@ body, html {
     margin-bottom: 1rem;
 }
 
-.contact-sites div{
+.contact-sites div {
 	flex: 1;
 	display: flex;
 	display: -ms-flexbox;
 	align-items: center;
 	-ms-flex-align: center;
+}
+
+.contact-sites img {
+	cursor: pointer;
 }
 
 .contact-sites .description {
