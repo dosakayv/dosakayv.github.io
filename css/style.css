@@ -7,6 +7,53 @@ body, html {
 	background-color: #F8C687;
 }
 
+@media only screen and (min-width : 1000px)  and (max-width : 1200px) {
+	body, html {
+		font-size: 12.5px;
+	}
+}
+
+@media only screen and (min-width : 1201px)  and (max-width : 1400px) {
+	body, html {
+		font-size: 13.0px;
+	}
+}
+
+@media only screen and (min-width : 1401px) and (max-width : 1600px) {
+	body, html {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width : 1601px) and (max-width : 1800px) {
+	body, html {
+		font-size: 19px;
+	}
+}
+
+@media only screen and (min-width : 1801px) {
+	body, html {
+		font-size: 22px;
+	}
+}
+/*@media only screen  and (min-width : 1400px) {
+	body, html {
+		font-size: 16px;
+	}
+}*/
+
+/*@media only screen  and (min-width : 1824px) {
+	body, html {
+		font-size: 16px;
+	}
+}*/
+
+/*@media screen and (max-width: 1000px) {
+	.home-page-text .heading-one {
+		font-size: 10.25rem;
+	}
+}*/
+
 /*Vertical Navigation*/
 
 .sectiondot {
@@ -135,8 +182,8 @@ body, html {
 	position: absolute;
 /*	font-size: 40px;
 	margin-left: 15px;*/
-	font-size: 2.5em;
-	margin-left: 0.25em;
+	font-size: 2.5rem;
+	margin-left: 0.25rem;
 	color: #FFF;
 }
 
@@ -184,7 +231,7 @@ body, html {
 	height: 75vh;
 	background-color: white;
 	box-sizing: border-box;
-	border: solid 1em;
+	border: solid 1rem;
 	margin-top: 12.5vh;
 	display: inline-block;
 }
@@ -194,7 +241,7 @@ body, html {
 	height: 75vh;
 	background-color: white;
 	box-sizing: border-box;
-	border: solid 1em;
+	border: solid 1rem;
 	margin-top: 12.5vh;
 	display: inline-block;
 	float: right;
@@ -224,7 +271,7 @@ body, html {
 	height: 0%;
 	left: 0;
 	position: absolute;
-	width: 2em;
+	width: 2rem;
 	-webkit-transition: all 0.45s ease;
 	transition: all 0.45s ease;
 }
@@ -239,7 +286,7 @@ body, html {
     background-color: #7DCC93;
     font-family: "Nunito";
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .project-description {
@@ -250,9 +297,9 @@ body, html {
 	right: 0;
 	opacity: 0;
 	color: white;
-	padding-left: 1.5em;
+	padding-left: 2.5rem;
 	font-family: 'Antic Slab', serif;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 .project-description:hover {
@@ -297,13 +344,13 @@ body, html {
 .home-page-text {
     font-family: "Nunito";
     font-weight: bold;
+	padding-right: 2rem;
 }
 
 .home-page-image {
 	width: 12.5rem;
 	height: 12.5rem;
 	border-radius: 50%;
-    padding-left: 2rem;
 }
 
 /*.content-container .test {
@@ -334,7 +381,7 @@ body, html {
 }
 
 .code .info-details {
-	font-size: 1.23em;
+	font-size: 1.23rem;
 }
 
 #section2 {
@@ -344,7 +391,7 @@ body, html {
 .info-heading {
     font-family: "Nunito";
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .about.section-content {
@@ -360,14 +407,14 @@ body, html {
 	justify-content: flex-start;
 	align-items: center;
 	box-sizing: border-box;
-	border: solid 0.4em;
-	margin: 1em;
+	border: solid 0.4rem;
+	margin: 1rem;
 }
 
 .info-details {
 	text-align: center;
     font-family: 'Antic Slab', serif;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 /* testing */
@@ -399,17 +446,17 @@ body, html {
 .contact .section-content{
 	/*display: flex;*/
 	/*align-items: center;*/
-	font-size: 16px;
+	/*font-size: 16px;*/
 	font-family: 'Antic Slab', serif;
 }
 
 .contact-page-title {
 	text-align: center;
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: bold;
 	font-family: "Nunito";
-	margin-bottom: 2em;
-	margin-top: 0.5em;
+	margin-bottom: 2rem;
+	margin-top: 0.5rem;
 }
 
 .mail-container {
@@ -423,20 +470,20 @@ body, html {
 .mail-container input {
 	background: none;
 	border: none;
-	border-bottom: 0.1em solid #000;
+	border-bottom: 0.2rem solid #000;
 	outline:none;
 	position: relative;
 	z-index: 1;
 	transition: border-color 500ms ease;
 	width: 100%;
-	font-size: 2em;
+	font-size: 2rem;
 	font-family: 'Antic Slab', serif;
 }
 
 .mail-container label {
 	/*font-weight: bold;*/
 	position: absolute;
-	font-size: 2em;
+	font-size: 2rem;
 	top: 0;
 	left: 0;
 	-webkit-transition: -webkit-transform 500ms ease;
@@ -445,8 +492,8 @@ body, html {
 
 .mail-container input:focus + label, .mail-container input:valid + label {
 	/*color: orange;*/
-	transform: translate3d(0, -1.5em, 0);
-	-webkit-transform: translate3d(0, -1.5em, 0);
+	transform: translate3d(0, -2.4rem, 0);
+	-webkit-transform: translate3d(0, -2.4rem, 0);
 }
 
 .mail-container input:focus {
@@ -463,26 +510,26 @@ body, html {
 }
 
 .contact-column div:nth-child(2) {
-    margin-top: 4.5em;
+    margin-top: 4.5rem;
 }
 
 .contact-column:nth-child(2) {
-    margin-left: 2em;
+    margin-left: 2rem;
 }
 
 .contact-form-message {
-	border-bottom: 0.1em solid #000;
+	border-bottom: 0.2rem solid #000;
 	z-index: 1;
 	transition: border-color 500ms ease;
-	font-size: 2em;
+	font-size: 2rem;
 	outline: none;
-	margin-top: 2em;
+	margin-top: 5rem;
 }
 
 .contact-form-message-active {
 	/*color: orange;*/
-	transform: translate3d(0, -1.5em, 0);
-	-webkit-transform: translate3d(0, -1.5em, 0);
+	transform: translate3d(0, -2.4rem, 0);
+	-webkit-transform: translate3d(0, -2.4rem, 0);
 }
 
 .contact-form-message:focus {
@@ -490,13 +537,13 @@ body, html {
 }
 
 .contact-submit {
-	margin-top: 4.5em;
+	margin-top: 4.5rem;
 	text-align: center;
 }
 
 .contact-submit-button {
 	position: relative;
-	padding: 1.25em 1.25em;
+	padding: 1.25rem 1.25rem;
 	border: #ff4c2e;
 	background: #ff4c2e;
 	color: #fff;
@@ -504,9 +551,10 @@ body, html {
 	line-height: 1;
 	z-index: 0;
 	outline: none;
-	width: 20em;
+	width: 20rem;
 	font-family: "Nunito";
 	font-weight: bold;
+	font-size: 1rem
 }
 
 .contact-submit-button:after {
@@ -552,8 +600,8 @@ body, html {
 	display: flex;
 	width: 125%;
     margin-left: -15%;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .contact-sites div{
@@ -563,7 +611,7 @@ body, html {
 }
 
 .contact-sites .description {
-	margin-left: .35em;
+	margin-left: .35rem;
 }
 
 /*Fixed Contact Container*/
@@ -586,7 +634,7 @@ body, html {
 }
 
 .linkedin-logo {
-    padding: 0px 0.65rem;
+    padding: 0rem 0.65rem;
 }
 
 .gmail-logo {
