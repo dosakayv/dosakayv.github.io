@@ -36,23 +36,6 @@ body, html {
 		font-size: 22px;
 	}
 }
-/*@media only screen  and (min-width : 1400px) {
-	body, html {
-		font-size: 16px;
-	}
-}*/
-
-/*@media only screen  and (min-width : 1824px) {
-	body, html {
-		font-size: 16px;
-	}
-}*/
-
-/*@media screen and (max-width: 1000px) {
-	.home-page-text .heading-one {
-		font-size: 10.25rem;
-	}
-}*/
 
 /*Vertical Navigation*/
 
@@ -79,8 +62,10 @@ body, html {
     right: 2.5rem;
     z-index: 1;
     height: 100%;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
+    -ms-flex-align: center;
 }
 
 .vertical-navigation {
@@ -249,7 +234,8 @@ body, html {
 
 /*HAVE TO ADD IE10 version of flex box*/
 .projects-row {
-	/*height: 50%;*/
+	height: 100%;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	background-color: #212121;
@@ -279,9 +265,12 @@ body, html {
 .projects-row .project-heading {
     width: 100%;
     height: 100%;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
+	-ms-flex-align: center;
 	justify-content: center;
+	-ms-flex-pack: center;
 	text-align: center;
     background-color: #7DCC93;
     font-family: "Nunito";
@@ -327,15 +316,21 @@ body, html {
     position: absolute;
     top: 0;
     justify-content: center;
+    -ms-flex-pack: center;
     align-items: center;
+    -ms-flex-align: center;
     display: flex;
+    display: -ms-flexbox;
 }
 
 .home-page-content {
     border: solid 0.7rem;
     display: flex;
+    display: -ms-flexbox;
     align-items: center;
+    -ms-flex-align: center;
     justify-content: center;
+    -ms-flex-pack: center;
     color: #FFFFFF;
     width: 60%;
     height: 68%;
@@ -396,6 +391,7 @@ body, html {
 
 .about.section-content {
 	display: flex;
+	display: -ms-flexbox;
 	flex-wrap: wrap;
 }
 
@@ -403,9 +399,13 @@ body, html {
 	width: 45%;
 	height: 45%;
 	display: flex;
+	display: -ms-flexbox;
 	flex-direction: column;
+	-ms-flex-direction: column;
 	justify-content: flex-start;
+	-ms-flex-pack: start;
 	align-items: center;
+	-ms-flex-align: center;
 	box-sizing: border-box;
 	border: solid 0.4rem;
 	margin: 1rem;
@@ -421,8 +421,11 @@ body, html {
 
 .vertical-navigation a {
     display: flex;
+    display: -ms-flexbox;
     justify-content: flex-end;
+    -ms-flex-pack: end;
     align-items: center;
+    -ms-flex-align: center;
     text-decoration: none !important;
 }
 
@@ -502,11 +505,13 @@ body, html {
 
 .contact-information {
 	display: flex;
+	display: -ms-flexbox;
 	flex-direction: row;
+	-ms-flex-direction: row;
 }
 
 .contact-column {
-	flex-grow: 1;
+	flex: 1;
 }
 
 .contact-column div:nth-child(2) {
@@ -598,6 +603,7 @@ body, html {
 
 .contact-sites {
 	display: flex;
+	display: -ms-flexbox;
 	width: 125%;
     margin-left: -15%;
     margin-top: 3rem;
@@ -607,7 +613,9 @@ body, html {
 .contact-sites div{
 	flex: 1;
 	display: flex;
+	display: -ms-flexbox;
 	align-items: center;
+	-ms-flex-align: center;
 }
 
 .contact-sites .description {
@@ -621,7 +629,9 @@ body, html {
 	z-index: 1;
 	height: 100%;
 	display: flex;
+	display: -ms-flexbox;
 	align-items: center;
+	-ms-flex-align: center;
 }
 
 /*.fixed-contacts {
