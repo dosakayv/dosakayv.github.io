@@ -1,19 +1,52 @@
 body, html {
 	height: 100%;
+	font-size: 16px;
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
+	background-color: #F8C687;
 }
+
+/*Vertical Navigation*/
 
 .sectiondot {
 	position: relative;
-	width: 12px;
-	height: 12px;
-	background-color: yellow;
+	width: 1rem;
+	height: 1rem;
+	/*background-color: yellow;*/
+	background-color: #D4E332;
 	display: inline-block;
 	float: right;
-	transform: scale(0.6);
+	transform: scale(0.75);
 	border-radius: 50%;
+}
+
+.sectionname {
+	font-family: "Nunito";
+	font-weight: bold;
+	padding-right: 0.75rem;
+}
+
+.vertical-navigation-container {
+    position: fixed;
+    right: 2.5rem;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-navigation {
+	/*background-color: gray;*/
+}
+
+.vertical-navigation a {
+	text-decoration: none;
+	color: #2819D1;
+}
+
+.vertical-navigation div {
+	margin-bottom: 0.25rem;
 }
 
 .vertical-navigation .sectionname {
@@ -26,7 +59,8 @@ body, html {
 }
 
 .vertical-navigation a.is-selected .sectiondot {
-	background-color: blue;
+	/*background-color: blue;*/
+	background-color: #2819D1;
 	transform: scale(1)
 }
 
@@ -140,7 +174,7 @@ body, html {
 	background-color: #F76160;
 }
 
-.projects a {
+.projects .project-link {
 	text-decoration: none;
 	color: black;
 }
@@ -200,7 +234,8 @@ body, html {
     height: 100%;
     display: flex;
     align-items: center;
-    text-align: center;
+	justify-content: center;
+	text-align: center;
     background-color: #7DCC93;
     font-family: "Nunito";
     font-weight: bold;
@@ -250,31 +285,47 @@ body, html {
 }
 
 .home-page-content {
-    border: solid 10px;
+    border: solid 0.7rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #FFFFFF;
+    width: 60%;
+    height: 68%;
 }
 
 .home-page-text {
     font-family: "Nunito";
     font-weight: bold;
-    padding-left: 2em;
 }
 
 .home-page-image {
-	width: 200px;
-	height: 200px;
+	width: 12.5rem;
+	height: 12.5rem;
 	border-radius: 50%;
-	padding: 0em 2em;
+    padding-left: 2rem;
 }
 
+/*.content-container .test {
+	width: 100%;
+	display: inline-block;
+	color: white;
+}*/
+
 .home-page-text .heading-one {
-	font-size: 100px;
+	font-size: 6.25rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.home-page-text .heading-one {
+		/*color: blue;*/
+		/*font-size: 12px;*/
+		font-size: 10.25rem;
+	}
 }
 
 .home-page-text .heading-two {
-	font-size: 40px;
+	font-size: 2.5rem;
 }
 
 /*About Page*/
@@ -330,23 +381,6 @@ body, html {
     text-decoration: none !important;
 }
 
-.sectionname {
-	padding-right: 0.75em;
-}
-
-.vertical-navigation-container {
-    position: fixed;
-    right: 40px;
-    z-index: 1;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.vertical-navigation {
-	background-color: gray;
-}
-
 /*Link for the projects*/
 .projectLink1 {
 	display: block;
@@ -357,6 +391,11 @@ body, html {
 
 #section4 {
 	background-color: #F8C687;
+	/*overflow: auto;*/
+}
+
+.contact-mail-form {
+    height: 75%;
 }
 
 .contact .section-content{
@@ -544,15 +583,15 @@ body, html {
 }*/
 
 .github-logo {
-    padding: 30px 10px;
+    padding: 2rem 0.65rem;
 }
 
 .linkedin-logo {
-    padding: 0px 10px;
+    padding: 0px 0.65rem;
 }
 
 .gmail-logo {
-    padding: 30px 10px;
+    padding: 2rem 0.65rem;
 }
 
 /*.fixed-contacts div {

@@ -3,6 +3,8 @@ jQuery(document).ready(function($){
 	var contentSections = $(".vi-section");
 	var navigationItems = $(".vertical-navigation a");
 
+	// $(".content-container .test").fitText(1.2, { minFontSize: '50px', maxFontSize: '400px' });
+
 	updateNavigation();
 	$(window).on('scroll', function(){
 		updateNavigation();
