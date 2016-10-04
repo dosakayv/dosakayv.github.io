@@ -355,7 +355,7 @@ body, html {
 	width: 12.5rem;
 	height: 12.5rem;
 	border-radius: 50%;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 }
 
 /*.content-container .test {
