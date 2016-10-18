@@ -4,7 +4,7 @@ body, html {
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
-	background-color: #AEC5EB;
+	background-color: #000000;
 }
 
 @media only screen and (min-width : 1000px)  and (max-width : 1200px) {
@@ -43,8 +43,7 @@ body, html {
 	position: relative;
 	width: 1rem;
 	height: 1rem;
-	background-color: #003554;
-	/*background-color: #D4E332;*/
+	background-color: #FFC107;
 	display: inline-block;
 	float: right;
 	transform: scale(0.75);
@@ -74,8 +73,7 @@ body, html {
 
 .vertical-navigation a {
 	text-decoration: none;
-	/*color: #2819D1;*/
-	color: #FFFFFF;
+	color: #FFC107;
 }
 
 .vertical-navigation div {
@@ -93,8 +91,11 @@ body, html {
 
 .vertical-navigation a.is-selected .sectiondot {
 	background-color: #FFFFFF;
-	/*background-color: #2819D1;*/
 	transform: scale(1)
+}
+
+.is-selected .sectionname {
+	color: #FFFFFF;
 }
 
 .vertical-navigation a:hover span{
@@ -143,7 +144,7 @@ body, html {
     margin-left: -500px;
     border-bottom: 500px solid transparent;
     border-left: 500px solid;
-	border-left-color: #000;
+	border-left-color: #FFC107;
 }
 /*
 #section2 .section-header:after {
@@ -170,7 +171,7 @@ body, html {
 	margin-left: 15px;*/
 	font-size: 2.5rem;
 	margin-left: 0.25rem;
-	color: #FFF;
+	color: #000000;
 }
 
 /*#section2 .section-header-title {
@@ -205,7 +206,8 @@ body, html {
 
 #section3 {
 	/*background-color: #F76160;*/
-	background-color: #051923;
+	/*background-color: #051923;*/
+	color: #FFFFFF;
 }
 
 .projects .project-link {
@@ -240,7 +242,7 @@ body, html {
 	display: -ms-flexbox;
 	display: flex;
 	position: relative;
-	background-color: #212121;
+	background-color: #000000;
 }
 
 .projects-row:hover .project-heading {
@@ -252,8 +254,7 @@ body, html {
 }
 
 .projects-row::after {
-	/*background-color: #B46E3C;*/
-	background-color: #003554;
+	background-color: #FFC107;
 	bottom: 0;
 	content: '';
 	height: 0%;
@@ -267,6 +268,7 @@ body, html {
 .projects-row .project-heading {
     width: 100%;
     height: 100%;
+	color: #FFFFFF;
     display: -ms-flexbox;
     display: flex;
     align-items: center;
@@ -274,8 +276,7 @@ body, html {
 	justify-content: center;
 	-ms-flex-pack: center;
 	text-align: center;
-    /*background-color: #7DCC93;*/
-    background-color: #AEC5EB;
+    background-color: #212121;
     font-family: "Nunito";
     font-weight: bold;
     font-size: 3rem;
@@ -288,7 +289,7 @@ body, html {
 	left: 0;
 	right: 0;
 	opacity: 0;
-	color: white;
+	color: #FFFFFF;
 	padding-left: 2.5rem;
 	font-family: 'Antic Slab', serif;
 	font-size: 1.5rem;
@@ -306,7 +307,7 @@ body, html {
 
 /*home page color*/
 #section1 {
-	background-color: #051923;
+	background-color: #000000;
 }
 
 .home-page {
@@ -391,7 +392,8 @@ body, html {
 
 #section2 {
 	/*background-color: #BEE1DD;*/
-	background-color: #AEC5EB;
+	/*background-color: #AEC5EB;*/
+	color: white;
 }
 
 .info-heading {
@@ -451,8 +453,9 @@ body, html {
 
 #section4 {
 	/*background-color: #F8C687;*/
-	background-color: #AEC5EB;
+	/*background-color: #AEC5EB;*/
 	/*overflow: auto;*/
+	color: white
 }
 
 .contact-mail-form {
@@ -494,7 +497,8 @@ body, html {
 .mail-container input {
 	background: none;
 	border: none;
-	border-bottom: 0.2rem solid #000;
+	border-bottom: 0.2rem solid #FFFFFF;
+	color: #FFFFFF;
 	outline:none;
 	position: relative;
 	z-index: 1;
@@ -516,13 +520,16 @@ body, html {
 }
 
 .mail-container input:focus + label, .mail-container input:valid + label {
-	/*color: white;*/
 	transform: translate3d(0, -2.4rem, 0);
 	-webkit-transform: translate3d(0, -2.4rem, 0);
 }
 
+.mail-container input:focus + label {
+	color: #FFC107;
+}
+
 .mail-container input:focus {
-	border-color: white;
+	border-color: #FFC107;
 }
 
 .contact-information {
@@ -545,7 +552,7 @@ body, html {
 }
 
 .contact-form-message {
-	border-bottom: 0.2rem solid #000;
+	border-bottom: 0.2rem solid #FFFFFF;
 	z-index: 1;
 	transition: border-color 500ms ease;
 	font-size: 2rem;
@@ -554,13 +561,16 @@ body, html {
 }
 
 .contact-form-message-active {
-	/*color: white;*/
 	transform: translate3d(0, -2.4rem, 0);
 	-webkit-transform: translate3d(0, -2.4rem, 0);
 }
 
 .contact-form-message:focus {
-	border-color: white;
+	border-color: #FFC107;
+}
+
+.contact-form-message:focus + .contact-form-message-label {
+	color: #FFC107;
 }
 
 .contact-submit {
@@ -573,9 +583,9 @@ body, html {
 	padding: 1.25rem 1.25rem;
 /*	border: #ff4c2e;
 	background: #ff4c2e;*/
-	border: #003554;
-	background: #003554;
-	color: #fff;
+	border: #000000;
+	background: #FFFFFF;
+	color: #000000;
 	cursor: pointer;
 	line-height: 1;
 	z-index: 0;
@@ -589,7 +599,7 @@ body, html {
 .contact-submit-button:after {
 	position: absolute;
 	content: "";
-	background: #000;
+	background: #FFC107;
 	width: 0;
 	height: 100%;
 	top: 0;
