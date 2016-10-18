@@ -369,6 +369,10 @@ body, html {
 	font-size: 6.25rem;
 }
 
+.heading-name {
+	color: #FFC107;
+}
+
 /*@media screen and (max-width: 1000px) {
 	.home-page-text .heading-one {
 		font-size: 10.25rem;
